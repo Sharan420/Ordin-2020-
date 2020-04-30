@@ -192,6 +192,7 @@ form input[type=email], input[type=password] {
     text-align: center;
     margin: 10px auto;
     background: none;
+    color: var(--font-color);
 }
 
 input[type="submit"] {
