@@ -1,0 +1,91 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+
+<title>Ordin@trix 20 | Login</title>  
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link href='main.css' rel='stylesheet' type='text/css'>
+<link href='animations.css' rel='stylesheet' type='text/css'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <!---  NAVBAR   --->
+        
+<div class="navbar">
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <div class="theme-switch-wrapper">
+        <a class="dark-mode-text">Dark Mode -> </a>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+</div>      
+
+    <!---  LOGIN FORM   --->
+       
+<div class="login">
+    <center>
+        <h1>Login</h1>
+        <form> 
+            <input placeholder="Email" name="email" type="email"><br>
+            <input placeholder="Password" name="password" type="password"><br>
+            <input class="button" type="submit" value="Login">
+        </form>    
+    </center>
+</div>
+
+<script>
+    // DARK MODE
+    
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }    
+    }
+    
+    // SAVE PREFERENCE TO LOCAL STORAGE
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }    
+    }
+    
+    // CHECK LOCAL STORAGE FOR PREFERENCE
+    
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+            document.getElementById("skill-img").style.filter = "invert(100)";
+        }
+    }
+</script>    
+</body>
+</html>

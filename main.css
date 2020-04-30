@@ -1,0 +1,220 @@
+/* VARIABLES */
+
+:root {
+    --primary-color: #ff4545;
+    --secondary-color: #c23232;
+    --font-color: #000;
+    --bg-color: #fff;
+    --heading-color: #000;
+    --nav-bg-color: #ddd;
+    --overlay-color: rgba(165, 165, 165, 0.32);
+    --scroll-bg-color: #ddd;
+    --scroll-fg-color: #aaa;
+}
+
+[data-theme="dark"] {
+    --primary-color: #ff4545;
+    --secondary-color: #c23232;
+    --font-color: #ffffff;
+    --bg-color: #1f1f1f;
+    --heading-color: #aaaaaa;
+    --nav-bg-color: #2e2e2e;
+    --overlay-color: rgba(0, 0, 0, 0.32);
+    --scroll-bg-color: #0f0f0f;
+    --scroll-fg-color: #272727;
+}
+
+/*NAVBAR*/
+
+.navbar a:hover {
+    color: var(--home-color);
+}
+.navbar {
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    width: 100%;
+    border-radius: 0;
+    z-index: 500;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+	-webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-name: InDown;
+    animation-name: InDown;
+    top: 0;
+    transition: all 0.5s;	
+    color: var(--primary-color);
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 10px 15px;
+    position: relative;
+}
+
+.navbar a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--home-color);
+    height: 2px;
+    transition: all 0.5s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 0 10px;
+}
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 34px;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 2px;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    transition: .4s;
+    width: 20px;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(10px);
+}
+
+.slider.round {
+    border-radius: 12px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.theme-switch-wrapper:hover .dark-mode-text::after {
+    width: 0 !IMPORTANT;
+}
+
+.dark-mode-text:hover {
+    color: var(--primary-color);
+}
+
+/* PREREQUISITES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : 'Raleway', sans-serif;
+}
+
+html {
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}    
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-fg-color);
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    padding-top: 10%;
+}
+
+hr {
+    width: 85%;
+    border-color: var(--nav-bg-color);
+}
+
+/* FORM */
+
+.login h1{
+    color: var(--font-color);
+}
+
+form input[type=email], input[type=password] {
+    border: transparent solid 2px;
+    border-bottom-color: var(--secondary-color);
+    padding: 10;
+    justify-content: center;
+    align-content: center;
+    width: 30%;;
+    transition: 0.25s;
+    text-align: center;
+    margin: 10px auto;
+    background: none;
+}
+
+input[type="submit"] {
+    border: var(--primary-color) solid 2px;
+    background: none;
+    border-radius: 30px;
+    padding: 10;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    transition: 0.5s;
+    text-align: center;
+    margin: 5px auto;
+    color: var(--font-color);
+}
+
+input[type="submit"]:hover{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+form input[type="email"]:focus-within, input[type="password"]:focus-within {
+    border: transparent solid 2px;
+    border-bottom-color: var(--primary-color);
+    width: 40%;
+}
