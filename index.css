@@ -179,7 +179,12 @@ input:checked + .slider:before {
 
 .mainbod {
 	transition: .4s ease-out;
-	display: none;
+	opacity: 0;
+    display: none;
+}
+
+.showing {
+    display: block !important;
 }
 
 .intro {
@@ -188,7 +193,7 @@ input:checked + .slider:before {
 	text-align: center;
 	transition: .2s ease-out;
     background-color: #000;
-    display: block;
+    opacity: 1;
     z-index: 999;
 }
 

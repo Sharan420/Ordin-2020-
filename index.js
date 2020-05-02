@@ -43,10 +43,16 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
 var myVar;
 function myFunction() {
     myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(makePage, 2000);
+    myVar = setTimeout(removeLoader, 3500);
 }
 
 function showPage() {
-    document.getElementById("intro").style.display = "none";
+    document.getElementById("intro").style.opacity = "0";
+    document.getElementById("mainbod").style.opacity = "1";
     document.getElementById("mainbod").style.display = "block";
 } 
-    
+
+function removeLoader() {
+    document.getElementById("intro").style.dislplay = "none";
+} 
