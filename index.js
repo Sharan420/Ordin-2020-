@@ -47,6 +47,6 @@ function myFunction() {
 
 function showPage() {
     document.getElementById("intro").style.display = "none";
-    document.getElementById("mainBod").style.display = "block";
+    document.getElementById("mainbod").style.display = "block";
 } 
     

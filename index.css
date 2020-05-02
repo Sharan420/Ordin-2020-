@@ -179,7 +179,7 @@ input:checked + .slider:before {
 
 .mainbod {
 	transition: .4s ease-out;
-	color: #fff;
+	display: none;
 }
 
 .intro {
