@@ -38,7 +38,7 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
     }
 }
 
-    // LOADER
+    // LOADER 
     
 var myVar;
 function myFunction() {

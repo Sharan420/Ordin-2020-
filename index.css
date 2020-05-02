@@ -247,7 +247,7 @@ input:checked + .slider:before {
     transform: scale(0.85);
 }
 
-/* FORM */
+/* FORM */ 
 
 .login h1{
     color: var(--font-color);
