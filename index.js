@@ -48,11 +48,11 @@ function myFunction() {
 }
 
 function showPage() {
-    document.getElementById("intro").style.opacity = "0";
+    document.getElementById("load").style.opacity = "0";
     document.getElementById("mainbod").style.opacity = "1";
     document.getElementById("mainbod").style.display = "block";
 } 
 
 function removeLoader() {
-    document.getElementById("intro").style.dislplay = "none";
+    document.getElementById("load").style.dislplay = "none";
 } 
