@@ -1,0 +1,122 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<head>
+
+<title>Ordin@trix 20 | Register</title>  
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+<link href='index.css' rel='stylesheet' type='text/css'>
+<link href='animations.css' rel='stylesheet' type='text/css'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <!---  NAVBAR   --->
+        
+<div class="navbar">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <div class="theme-switch-wrapper">
+        <a class="dark-mode-text">Dark Mode -> </a>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+</div>      
+
+    <!---  REGISTER FORM   --->
+       
+<div class="register">
+    <center>
+        <h1>Register For Events</h1>  
+    </center>
+    
+    <div class="innovate event-form">
+        <h3>INNOVATE@TRIX</h3>
+        <form> 
+            <input placeholder="Participant 1 Name" name="innovate1" type="text"><br>
+            <input placeholder="Participant 2 Name" name="innovate2" type="text"><br>
+            <input class="button" type="submit" value="Register">            
+        </form>  
+    </div>
+    
+    <div class="confer event-form">
+        <h3>CONFER@TRIX</h3>
+        <form> 
+            <input placeholder="Participant 1 Name" name="confer1" type="text"><br>
+            <input placeholder="Participant 2 Name" name="confer2" type="text"><br>
+            <input class="button" type="submit" value="Register">            
+        </form>  
+    </div>
+    
+    <div class="movie event-form">
+        <h3>MOVIE@TRIX</h3>
+        <form> 
+            <input placeholder="Participant 1 Name" name="movie1" type="text"><br>
+            <input placeholder="Participant 2 Name" name="movie2" type="text"><br>
+            <input class="button" type="submit" value="Register">            
+        </form>  
+    </div>
+    
+    <div class="quiz event-form">
+        <h3>QUIZ@TRIX</h3>
+        <form> 
+            <input placeholder="Participant 1 Name" name="quiz1" type="text"><br>
+            <input placeholder="Participant 2 Name" name="participant2" type="text"><br>
+            <input class="button" type="submit" value="Register">            
+        </form>  
+    </div>
+    
+    <div class="anim event-form">
+        <h3>ANIM@TRIX</h3>
+        <form> 
+            <input placeholder="Participant 1 Name" name="anim1" type="text"><br>
+            <input placeholder="Participant 2 Name" name="anim2" type="text"><br>
+            <input class="button" type="submit" value="Register">            
+        </form>  
+    </div>
+    
+    <div class="code event-form">
+        <h3>CODE@TRIX</h3>
+        <form> 
+            <input placeholder="Participant 1 Name" name="code1" type="text"><br>
+            <input placeholder="Participant 2 Name" name="code2" type="text"><br>
+            <input class="button" type="submit" value="Register">            
+        </form>  
+    </div>
+    
+    <div class="snap event-form">
+        <h3>SNAP@TRIX</h3>
+        <form> 
+            <input placeholder="Participant 1 Name" name="snap1" type="text"><br>
+            <input placeholder="Participant 2 Name" name="snap2" type="text"><br>
+            <input class="button" type="submit" value="Register">            
+        </form>  
+    </div>
+</div>
+
+<script src="index.js"></script>    
+<script>
+    
+    // TRANSPARENT NAVBAR
+    
+jQuery(document).on("scroll", function () {
+    if ($(document).scrollTop() > 120) {
+        $(".navbar").css("background-color","var(--nav-bg-color)");
+    } else {
+        $(".navbar").css("background","none");
+    }
+});      
+</script>
+</body>
+</html>

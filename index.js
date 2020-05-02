@@ -55,4 +55,4 @@ function showPage() {
 
 function removeLoader() {
     document.getElementById("load").style.dislplay = "none";
-} 
+}     
