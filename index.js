@@ -38,3 +38,15 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
     }
 }
 
+    // LOADER
+    
+var myVar;
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("mainBod").style.display = "block";
+} 
+    

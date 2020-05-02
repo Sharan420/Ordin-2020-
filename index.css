@@ -175,7 +175,67 @@ input:checked + .slider:before {
     color: var(--primary-color);
 }
 
+/* LOADER */
 
+.mainbod {
+	transition: .4s ease-out;
+	color: #fff;
+    opacity: 0;
+}
+
+.intro {
+    max-height: 100%;
+	width: 100%;
+	text-align: center;
+	transition: .2s ease-out;
+    background-color: #000;
+    display: block;
+    z-index: 999;
+}
+
+.lds-ring > div{
+    position: absolute;
+    padding: 15%;
+    margin: auto;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color: #ff6767 transparent transparent transparent;
+    animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+    -webkit-animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+}
+
+.lds-ring > div:nth-child(2) {
+    animation-delay: .2s;
+    border-color: #ff3131 transparent transparent transparent;
+}
+
+.lds-ring > div:nth-child(3) {
+    animation-delay: .4s;
+    border-color: #ff3131 transparent transparent transparent;
+}
+
+.lds-ring > div:nth-child(4) {
+    animation-delay: .6s;
+    border-color: #990000 transparent transparent transparent;
+}
+
+.lds-ring > div:nth-child(5) {
+    color: #fff;
+    border: 0px;
+    animation: fromtop 1s;
+    -webkit-animation: fromtop 1s;
+    padding: 14% 10.5%;
+    text-align: center;
+    font-family: 'Major Mono Display';
+}
+
+.lds-ring > div {
+    padding: 20%;
+    left: 25%;
+}
+.lds-ring > div:nth-child(5) {
+    padding: 17%;
+}
 /* FORM */
 
 .login h1{
