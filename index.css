@@ -24,6 +24,39 @@
     --scroll-fg-color: #272727;
 }
 
+/* PREREQUISITES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : 'Raleway', sans-serif;
+}
+
+html {
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}    
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-fg-color);
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+	transition: .4s ease-out;
+}
+
+hr {
+    width: 85%;
+    border-color: var(--nav-bg-color);
+}
+
 /*NAVBAR*/
 
 .navbar a:hover {
@@ -142,38 +175,6 @@ input:checked + .slider:before {
     color: var(--primary-color);
 }
 
-/* PREREQUISITES */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family : 'Raleway', sans-serif;
-}
-
-html {
-    margin: 0;
-}
-::-webkit-scrollbar {
-    width: 10px;
-}    
-::-webkit-scrollbar-track {
-    background-color: var(--scroll-bg-color);
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--scroll-fg-color);
-}
-
-body {
-    overflow-x: hidden;
-    background-color: var(--bg-color);
-    padding-top: 10%;
-}
-
-hr {
-    width: 85%;
-    border-color: var(--nav-bg-color);
-}
 
 /* FORM */
 
@@ -218,4 +219,23 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within {
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
     width: 40%;
+}
+
+/* ANIMATIONS */
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+@-webkit-keyframes lds-ring {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
 }
