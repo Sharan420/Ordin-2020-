@@ -23,15 +23,9 @@
         
 <div class="navbar">
     <a href="index.html"><i class="fas fa-home"></i></a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-    <div class="theme-switch-wrapper">
-        <a class="dark-mode-text">Dark Mode -> </a>
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-    </div>
+    <a href="register2.html" class="log">Register for Events</a>
+    <a href="register.html" class="log">Register</a>
+    <a href="login.html" class="log">Login</a>
 </div>      
 
     <!---  REGISTER FORM   --->
@@ -105,18 +99,8 @@
     </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="index.js"></script>    
-<script>
-    
-    // TRANSPARENT NAVBAR
-    
-jQuery(document).on("scroll", function () {
-    if ($(document).scrollTop() > 120) {
-        $(".navbar").css("background-color","var(--nav-bg-color)");
-    } else {
-        $(".navbar").css("background","none");
-    }
-});      
-</script>
 </body>
 </html>

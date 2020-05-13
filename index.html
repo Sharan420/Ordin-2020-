@@ -18,42 +18,333 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">    
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
+<link rel="stylesheet" href="ordin.css"> 
+
 
 </head>
 <body onload="myFunction()">
     
-    <!--- LOADER ---->
+    <!--- LOADER --->
     
 <div class="load" id="load">
-    <div class="lds-ring">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="weltext">Welcome</div>
-    </div>
+    <center>
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="weltext">Welcome</div>
+        </div>
+    </center>
 </div>
 <div class="mainbod" id="mainbod">    
     
     <!---  NAVBAR   --->
         
-<div class="navbar">
-    <a href="index.html"><i class="fas fa-home"></i></a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-    <div class="theme-switch-wrapper">
-        <a class="dark-mode-text">Dark Mode -> </a>
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-    </div>
+<div class="navbar disappear">
+    <a href="#home"><i class="fas fa-home"></i></a>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#team">Team</a>
+    <a href="register2.html" class="log">Register for Events</a>
+    <a href="register.html" class="log">Register</a>
+    <a href="login.html" class="log">Login</a>
 </div>      
 
+    <!--- HOME --->
 
+<div id="home">
+    <div class="home-container">
+        <!--<div id="particles-js"></div>-->
+        <video muted autoplay loop>
+            <source src="lib/homebg.mp4">
+        </video>
+        <div class="home-over">
+            <img class="home-img" src="lib/ordin.png">
+        </div>
+    </div>
+</div>    
+    
+<div id="about">
+    <center>
+        <div class="container">
+            <div class="cntdwn">
+                <h2>Coming Soon</h2>
+                <div id="demo"></div>
+                <p>6<sup>th</sup> August 2020</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="sponsors">
+                        <h2 class="text-center">Our Sponsors</h2><hr><br>
+                        <img class="col-md-3 img-fluid" src="lib/cadx.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 text-center">
+                    <div class="abt">
+                        <h1>Ordin@trix 20.0</h1>
+                        <p> It all started 14 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.
+                        <br><br>
+                        The event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <div class="abt">
+                    <h1>Pyrotech Club</h1>
+                        <p>Since it's conception, Ordin@trix has come a long way and so have the PYROTECHS. They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.<br><br>
+                        PYROTECH members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
 </div>
+    
+    <!---  EVENTS   --->
+        
+<div id="events">
+    <div class="banner"></div>
+    <div class="container">
+        <h1 class="text-center section-heading">The Events</h1>
+        <p class="heading-para">Because you have to know what all is in the store.</p>
+        <div class="container-fluid">
+            <div class="banner"></div>
+            <center>
+            <h2 class="text-center small-heading">News and Updates</h2><hr>
+            </center>
+            <div class="banner"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <center>
+                        <iframe class="newsframe" src="news.html" allowTransparency="true" style="border: none;overflow: hidden;height: 500px;width: 80%;"></iframe>
+                    </center>
+                </div>
+                <div class="col-md-6">
+                    <center>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fordinatrix19.0&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+            </div>
+            <div class="banner"></div>
+        </div>
+        <h2 class="smaller-heading">Some general guidelines</h2>
+        <ol class="guidelines">
+            <li>Only <b>online</b> registrations on first come first served basis.The first <b>35 registrations</b> will be accommodated. The last date for registration is <b>LOREM IPSUM</b>. On the spot registrations for any event will <b>NOT</b> be accepted. Certain events are subject to restraint regarding number of registrations. Schools are requested to check the same in the event rules.</li>
+            <li>List of registered schools will be displayed on our website and social portals</li>
+            <li>Registered schools will  report to the registration desk on LOREM IPSUM before 9 AM. In case a school is running late, it must inform the organizers about the same.</li>
+            <li>All the events will be held simultaneously starting from 9 AM and one  student can  register only for one event.</li>
+            <li>Each school team must be accompanied by a teacher.</li>
+            <li>Please refer to our school website, <a class="light" href="http://www.tagoreint.com/vv" target="_blank">www.tagoreint.com/vv</a> and our Facebook page, <a class="light" href="https://www.facebook.com/ordinatrix19.0/" target="_blank">Ordinatrix 20.0</a>, for the latest updates on the events.</li>
+            <li>Decisions of the organizers & jury members regarding any issue related to Ordin@trix’20.0 will be FINAL AND BINDING on all schools and participants.</li>
+            <li>To qualify for the overall trophy, a school must take part in a minimum of 5 events.</li>
+        </ol>
+    </div>
+    <div class="events container">
+        <h2 class="smaller-heading">Events</h2>
+        <div class="banner"></div>
+        <div class="d-none d-md-block">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                    <a href="innovate.html" target="_blank">
+                        <i class="fas fa-question eicon"></i>
+                        <h2>Lorem ipsum</h2>
+                        <p>lorem ipsum dolor sit amet consectetur</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                    <a href="confer.html" target="_blank">
+                        <i class="fas fa-question eicon"></i>
+                        <h2>Lorem ipsum</h2>
+                        <p>lorem ipsum dolor sit amet consectetur</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                    <a href="movie.html" target="_blank">
+                        <i class="fas fa-question eicon"></i>
+                        <h2>Lorem ipsum</h2>
+                        <p>lorem ipsum dolor sit amet consectetur</p>
+                    </a>
+                </div>
+            </div>
+            <div class="banner"></div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                    <a href="quiz.html" target="_blank">
+                        <i class="fas fa-question eicon"></i>
+                        <h2>Lorem ipsum</h2>
+                        <p>lorem ipsum dolor sit amet consectetur</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                    <a href="anim.html" target="_blank">
+                        <i class="fas fa-question eicon"></i>
+                        <h2>Lorem ipsum</h2>
+                        <p>lorem ipsum dolor sit amet consectetur</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                    <a href="code.html" target="_blank">
+                        <i class="fas fa-question eicon"></i>
+                        <h2>Lorem ipsum</h2>
+                        <p>lorem ipsum dolor sit amet consectetur</p>
+                    </a>
+                </div>
+            </div>
+            <div class="banner"></div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12"></div>
+                <div class="col-lg-1 col-sm-12"></div>
+                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                    <a href="snap.html" target="_blank">
+                        <i class="fas fa-question eicon"></i>
+                        <h2>Lorem ipsum</h2>
+                        <p>lorem ipsum dolor sit amet consectetur</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner"></div>
+        <center><img class="img-fluid" src="lib/schedule.png"></center>
+        <div class="banner"></div>
+        <div class="banner"></div>
+    </div>
+</div>
+
+    <!---  Team   --->    
+    
+<div id="team">
+    <div class="banner"></div>
+    <div class="container">
+        <h1 class="text-center">The A - Team</h1>
+        <div class="banner"></div>
+        <div class="contact container">
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+            </div>
+            
+            <div class="banner"></div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+            </div>
+            
+            <div class="banner"></div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div> 
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="imgcontainer">
+                        <img class="headsimg" src="lib/yeet.png">
+                    </div>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Lorem Ipsum Dolor</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur</p>
+                    <i class="fas fa-envelope"></i> loremipsum@dolor.com
+                </div>
+            </div>
+            
+            <div class="banner"></div>
+            
+        </div>
+    </div>
+</div>
+    
+    <!---  MAP   --->
+    
+<iframe style="width:100%; margin:0px; border: 0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7008.233786192498!2d77.15736990229725!3d28.566252389974288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1da64b31037f%3A0x9fe8114b5940d45c!2sTagore+International+School!5e0!3m2!1sen!2sin!4v1513607065658" height="450" frameborder="0" allowfullscreen></iframe>
+    
+    <!---  FOOTER   --->
+    
+<div class="footer">
+    <a href="#home"><img class="img-fluid" src="lib/logo.png" placeholder="Ordin@trix 20.0"></a>
+    <div class="fdiv">
+        &copy; All Rights Reserved. Pyrotech 2020<br>
+        Website developed by the Pyrotech team<br>
+        Tagore International School<br>
+        Vasant Vihar
+    </div>
+</div>
+    
+</div>
+    
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="index.js"></script>    
+<script src="ordin.js"></script>
 </body>
 </html>
