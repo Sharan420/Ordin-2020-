@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     // COUNTDOWN
 
-var countDownDate = new Date("Aug 6, 2020 00:00:00").getTime();
+var countDownDate = new Date("Jul 22, 2020 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -71,8 +71,8 @@ $(document).ready(function(){
     }
 });
 setInterval(function(){
-    $("#demo").css('background-color', 'rgba(199, 4, 0, 0.83)');
+    $("#demo").css('background-color', 'var(--primary-color)');
     setTimeout(function(){
-        $("#demo").css('background-color', 'rgba(199, 4, 0, 0.53)');
+        $("#demo").css('background-color', 'var(--secondary-color)');
     }, 500)
 }, 1000);

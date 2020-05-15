@@ -1,8 +1,8 @@
 /* VARIABLES */
 
 :root {
-    --primary-color: #ff4545;
-    --secondary-color: #c23232;
+    --primary-color: #65dceb;
+    --secondary-color: #32a1c2;
     --font-color: #ffffff;
     --bg-color: #1f1f1f;
     --heading-color: #aaaaaa;
@@ -50,10 +50,81 @@ hr {
 	height: 5rem
 }
 
+/* LOADER */
+
+.mainbod {
+	transition: .4s ease-out;
+    display: none;
+}
+
+.showing {
+    display: block !important;
+}
+
+.load {
+	height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    padding-top: 3%;
+    opacity: 1;
+    transition: .2s ease-out;
+}
+
+.lds-ring > div{
+    position: absolute;
+    padding: 20%;
+    margin: auto;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color: #67d0ff transparent transparent transparent;
+    animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+    -webkit-animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+}
+
+.lds-ring > div:nth-child(2) {
+    animation-delay: .2s;
+    border-color: #31ffff transparent transparent transparent;
+}
+
+.lds-ring > div:nth-child(3) {
+    animation-delay: .4s;
+    border-color: #31f7ff transparent transparent transparent;
+}
+
+.lds-ring > div:nth-child(4) {
+    animation-delay: .6s;
+    border-color: #009399 transparent transparent transparent;
+}
+
+.lds-ring > div:nth-child(5) {
+    color: var(--font-color);
+    border: 0px;
+    animation: fromtop 1s;
+    -webkit-animation: fromtop 1s;
+    padding-top: 20%;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 30;
+}
+
+.lds-ring > div {
+    padding: 20%;
+    left: 30%;
+}
+.lds-ring > div:nth-child(5) {
+    padding: 17%;
+}
+
+.lds-ring {
+    transform: scale(0.85);
+    width: 100%;
+}
+
 /*NAVBAR*/
 
 .navbar a:hover {
-    color: #eee;
+    color: var(--primary-color);
 }
 .navbar {
     overflow: hidden;
@@ -91,6 +162,7 @@ hr {
     position: relative;
     z-index: 1;
     font-size: 15;
+    margin: 1%;
 }
 
 .navbar a::after {
@@ -99,92 +171,21 @@ hr {
     left: 0;
     right: 0;
     margin: auto;
-    width: 100%;
+    width: 0%;
     content: '.';
     color: transparent;
     background: var(--primary-color);
-    height: 0%;
+    height: 2px;
     z-index: -1;
     transition: all 0.25s;
 }
 
 .navbar a:hover::after {
-    height: 100%;
+    width: 100%;
 }
 
 .navbar a.log {
     float: right;
-}
-
-/* LOADER */
-
-.mainbod {
-	transition: .4s ease-out;
-    display: none;
-}
-
-.showing {
-    display: block !important;
-}
-
-.load {
-	height: 100%;
-    width: 100%;
-    background-color: var(--bg-color);
-    padding-top: 3%;
-    opacity: 1;
-    transition: .2s ease-out;
-}
-
-.lds-ring > div{
-    position: absolute;
-    padding: 20%;
-    margin: auto;
-    border-radius: 50%;
-    border: 20px solid;
-    border-color: #ff6767 transparent transparent transparent;
-    animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
-    -webkit-animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
-}
-
-.lds-ring > div:nth-child(2) {
-    animation-delay: .2s;
-    border-color: #ff3131 transparent transparent transparent;
-}
-
-.lds-ring > div:nth-child(3) {
-    animation-delay: .4s;
-    border-color: #ff3131 transparent transparent transparent;
-}
-
-.lds-ring > div:nth-child(4) {
-    animation-delay: .6s;
-    border-color: #990000 transparent transparent transparent;
-}
-
-.lds-ring > div:nth-child(5) {
-    color: var(--font-color);
-    border: 0px;
-    animation: fromtop 1s;
-    -webkit-animation: fromtop 1s;
-    padding-top: 20%;
-    font-family: 'Raleway';
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 30;
-}
-
-.lds-ring > div {
-    padding: 20%;
-    left: 30%;
-}
-.lds-ring > div:nth-child(5) {
-    padding: 17%;
-}
-
-.lds-ring {
-    transform: scale(0.85);
-    width: 100%;
 }
 
 /* FORM */ 
@@ -244,37 +245,6 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
     color: var(--font-color);
 }
 
-/* HOME */
-
-#home {
-    height: 100%;
-}
-
-#home video {
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.home-container {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-}
-
-#home .home-over {
-    z-index: 1;
-    text-align: center;
-}
-#home .home-over img {
-    height: 100%;
-}
-
 /* ABOUT */
 
 #about {
@@ -293,20 +263,30 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
 
 .cntdwn p {
     text-align: right;
-    font-size: 25;
+    font-size: 15;
 }
 
 .sponsors h2 {
-    font-size: 30;
+    font-size: 20;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2;
 }
 
+.sponsors img {
+    width: 20vw;
+}
+
+@media screen and (max-width: 950px) {
+    .sponsors img {
+        width: 50vw;
+    }
+}
+
 .abt {
     padding: 10vh;
     background-color: var(--scroll-bg-color);
-    font-size: 20;
+    font-size: 15;
     min-height: 115%;
     max-width: 100%;
     margin: 5vh 0;
@@ -324,9 +304,15 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
     font-size: 50;
 }
 
+@media screen and (max-width: 950px) {
+    .abt h1 {
+        font-size: 20;
+    }
+}
+
 #demo {
     padding: 3vh;
-    font-size: 30;
+    font-size: 15;
     transition: 0.5s ease-out;
     letter-spacing: 2px;
 }
@@ -349,25 +335,25 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
 
 .heading-para {
     text-align: center;
-    font-size: 25;
+    font-size: 20;
 }
 
 .small-heading {
-    font-size: 30;
+    font-size: 25;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2;
 }
 
 .smaller-heading {
-    font-size: 30;
+    font-size: 20;
     font-weight: 300;
     letter-spacing: 2;
 }
 
 .guidelines {
     padding: 7vh;
-    font-size: 20;
+    font-size: 15;
     transition: 0.25s;
     text-align: left;
 }
@@ -447,8 +433,14 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
 }
 
 #team img {
-    max-width: 80%;
+    max-width: 15vw;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 950px) {
+    #team img {
+        max-width: 50vw;
+    }
 }
 
 /* FOOTER */
