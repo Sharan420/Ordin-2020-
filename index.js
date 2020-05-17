@@ -76,3 +76,14 @@ setInterval(function(){
         $("#demo").css('background-color', 'var(--secondary-color)');
     }, 500)
 }, 1000);
+    
+    // SIDE-NAV
+    
+function openNav() {
+    document.getElementById("sidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
+    

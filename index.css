@@ -9,6 +9,7 @@
     --nav-bg-color: #0d0d0d;
     --scroll-bg-color: #0f0f0f;
     --scroll-fg-color: #272727;
+    --light-bg-color: #eee;
 }
 
 /* PREREQUISITES */
@@ -18,6 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family : 'Raleway', sans-serif;
+    outline: none !important;
 }
 
 html {
@@ -42,7 +44,7 @@ body {
 
 hr {
     width: 50%;
-    border-color: var(--font-color);
+    border-color: #aaa;
 }
 
 .banner {
@@ -180,12 +182,127 @@ hr {
     transition: all 0.25s;
 }
 
+.nav-img {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.nav-img img {
+    width: 25vw;
+}
+
+.nav-img::after {
+    background: none !important;
+}
+
 .navbar a:hover::after {
     width: 100%;
 }
 
 .navbar a.log {
     float: right;
+}
+
+.navbar span {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 2vh;
+    text-decoration: none;
+    margin: 10px 15px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20;
+    color: var(--primary-color);
+}
+
+.navbar a span {
+    float: right !important;
+    padding: 0;
+    margin: 4vh;
+    color: #fff;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10%;
+}
+
+.sidenav a {
+    display: block;
+    color:  rgb(157, 157, 157);
+    text-align: center;
+    padding: 10px 4px;
+    width: 80%;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 10px 15px;
+    position: relative;
+    font-size: 25;
+    text-transform: uppercase;
+    font-weight: 500 !important; 
+}
+
+.sidenav a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+.sidenav a:hover::after {
+    width: 20%;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 36px;
+    margin-left: 4%;
+    margin-top: 5%;
+    width: 10%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 950px) {
+    .nav-big {
+        display: none !important;
+    }
+    .nav-small {
+        display: block !important;
+    }
+}
+
+.nav-big {
+    display: block;
+}
+
+.nav-small {
+    display: none;
 }
 
 /* FORM */ 
@@ -204,7 +321,7 @@ form input[type=email], input[type=password], input[type=text] {
     padding: 10;
     justify-content: center;
     align-content: center;
-    width: 30%;;
+    width: 40%;
     transition: 0.25s;
     text-align: center;
     margin: 10px auto;
@@ -234,7 +351,7 @@ input[type="submit"]:hover{
 form input[type="email"]:focus-within, input[type="password"]:focus-within, input[type="text"]:focus-within {
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
-    width: 40%;
+    width: 50%;
 }
 
 .event-form {
@@ -251,7 +368,8 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
     padding: 5% 10%;
     text-align: center;
     z-index: 1;
-    background-color: var(--bg-color);
+    background-color: var(--light-bg-color);
+    color: #000;
 }
 
 .cntdwn h2{
@@ -285,16 +403,30 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
 
 .abt {
     padding: 10vh;
-    background-color: var(--scroll-bg-color);
-    font-size: 15;
+    background-color: #ccc;
+    font-size: 20;
     min-height: 115%;
     max-width: 100%;
     margin: 5vh 0;
     transition: 0.25s;
 }
 
+.ordin-abt {
+    background-image: url(lib/ordin-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+
+.pyro-abt {
+    background-image: url(lib/pyro-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
 .abt:hover {
-    background-color: var(--scroll-fg-color);
+    background-color: #ddd;
 }
 
 .abt h1 {
@@ -316,6 +448,11 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
     transition: 0.5s ease-out;
     letter-spacing: 2px;
 }
+
+#about i {
+    font-size: 17;
+}
+
 
 /* EVENTS */
 
@@ -353,7 +490,7 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
 
 .guidelines {
     padding: 7vh;
-    font-size: 15;
+    font-size: 17;
     transition: 0.25s;
     text-align: left;
 }
@@ -419,6 +556,10 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
     text-decoration: none;
 }
 
+.hover-bg p {
+    font-size: 20;
+}
+
 #events img {
     max-width: 100%;
 }
@@ -429,11 +570,12 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
     padding: 5% 10%;
     text-align: center;
     z-index: 1;
-    background-color: var(--scroll-fg-color);
+    background-color: #ddd;
+    color: #000;
 }
 
 #team img {
-    max-width: 15vw;
+    max-width: 13vw;
     border-radius: 50%;
 }
 
@@ -441,6 +583,19 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
     #team img {
         max-width: 50vw;
     }
+}
+
+.head-text {
+    color: #000;
+    font-weight: 400 !important;
+    transition: 0.25s;
+}
+
+.heads-hr {
+    width: 60%;
+    border-color: var(--scroll-fg-color);
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
 /* FOOTER */

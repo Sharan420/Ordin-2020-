@@ -22,12 +22,33 @@
     <!---  NAVBAR   --->
         
 <div class="navbar">
-    <a href="index.html"><i class="fas fa-home"></i></a>
-    <a href="register2.html" class="log">Register for Events</a>
-    <a href="register.html" class="log">Register</a>
-    <a href="login.html" class="log">Login</a>
+    <div class="nav-big">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="register2.html" class="log">Register for Events</a>
+        <a href="register.html" class="log">Register</a>
+        <a href="login.html" class="log">Login</a>
+    </div>
+    <div class="nav-small">
+        <span onclick="openNav()" class="bruh">
+            <i class="fas fa-bars"></i>
+        </span>
+    </div>
 </div>      
 
+<div id="sidenav" class="sidenav">
+    <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="register2.html" class="log">Register for Events</a>
+        <a href="register.html" class="log">Register</a>
+        <a href="login.html" class="log">Login</a>
+    </center>
+</div>    
+
+<a class="sr-only sr-only-focusable" href="#mySidenav">Skip to navigation bar</a>
+<a class="sr-only sr-only-focusable" href="#home">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#end">Skip to footer</a>    
+        
     <!---  REGISTER FORM   --->
        
 <div class="register">

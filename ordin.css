@@ -8,11 +8,11 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  background-image: url("lib/ordin.png");
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.light-bubble {
+    left: 0;
 }
 
 @media screen and (max-width: 950px) {
@@ -23,4 +23,62 @@ canvas {
 
 #home {
     height: 100%;
+    text-align: center;
+}
+
+.home-over img {
+    height: 100%;
+}
+
+.event-page {
+    height: 80% !important;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    z-index: -1;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+    padding-top: 15%;
+}
+
+.event-page h1 {
+    font-size: 50;
+    font-weight: 300;
+}
+
+.event-page::before {
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.innovate::before {
+    background-image: url(lib/innovate.jpg);
+}
+.code::before {
+    background-image: url(lib/web.jpg);
+}
+.crypt::before {
+    background-image: url(lib/crypt.png);
+}
+.game::before {
+    background-image: url(lib/game.jpg);
+}
+.quiz::before {
+    background-image: url(lib/quiz.jpg);
+}
+.script::before {
+    background-image: url(lib/scratch.jpg);
+}
+.snap::before {
+    background-image: url(lib/photo.jpg);
 }
