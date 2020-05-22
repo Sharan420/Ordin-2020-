@@ -20,14 +20,14 @@ canvas {
         background-size: 60%;
     }
 }
-
-#home {
-    height: 100%;
-    text-align: center;
+.home-over img {
+    max-height: 100vh;
+    max-width: 100%;
 }
 
-.home-over img {
-    height: 100%;
+#home {
+    height: 100vh;
+    text-align: center;
 }
 
 .event-page {
@@ -81,4 +81,25 @@ canvas {
 }
 .snap::before {
     background-image: url(lib/photo.jpg);
+}
+
+.event-page a {
+    color: white;
+    text-decoration: none;
+}
+
+.event-page a h3 {
+    margin: 4vh;
+}
+
+.event-page a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
 }

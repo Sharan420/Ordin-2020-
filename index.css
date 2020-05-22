@@ -72,20 +72,20 @@ hr {
     transition: .2s ease-out;
 }
 
-.lds-ring > div{
+.lds-ring > div {
     position: absolute;
     padding: 20%;
     margin: auto;
     border-radius: 50%;
     border: 20px solid;
-    border-color: #67d0ff transparent transparent transparent;
+    border-color: #b9e9ff transparent transparent transparent;
     animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
     -webkit-animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 
 .lds-ring > div:nth-child(2) {
     animation-delay: .2s;
-    border-color: #31ffff transparent transparent transparent;
+    border-color: #6effff transparent transparent transparent;
 }
 
 .lds-ring > div:nth-child(3) {
@@ -149,7 +149,7 @@ hr {
 }
 
 .disappear {
-    opacity: 0;
+    top: -200;
 }
 
 .navbar a {
@@ -593,7 +593,7 @@ form input[type="email"]:focus-within, input[type="password"]:focus-within, inpu
 
 .heads-hr {
     width: 60%;
-    border-color: var(--scroll-fg-color);
+    border-color: #aaa;
     margin-top: 10px;
     margin-bottom:10px;
 }
