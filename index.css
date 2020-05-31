@@ -315,7 +315,7 @@ hr {
     color: var(--font-color);
 }
 
-form input[type=email], input[type=password], input[type=text] {
+input[type=email], input[type=password], input[type=text] {
     border: transparent solid 2px;
     border-bottom-color: var(--secondary-color);
     padding: 10;
@@ -348,7 +348,7 @@ input[type="submit"]:hover{
     color: #fff;
 }
 
-form input[type="email"]:focus-within, input[type="password"]:focus-within, input[type="text"]:focus-within {
+input[type="email"]:focus-within, input[type="password"]:focus-within, input[type="text"]:focus-within {
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
     width: 50%;
