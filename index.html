@@ -71,7 +71,7 @@
     <!--- HOME --->
 
 <div id="home">
-    <h1>ORDIN</h1>
+
 </div>    
     
 <div id="about">
@@ -141,20 +141,20 @@
     <!---  EVENTS   --->
         
 <div id="events">
-    
+    <div class="banner"></div>
     <div class="container">
         <h1 class="text-center section-heading">The Events</h1>
         <p class="heading-para">Because you have to know what all is in the store.</p>
         <div class="container-fluid">
-            
+            <div class="banner"></div>
             <center>
             <h2 class="text-center small-heading">News and Updates</h2><hr>
             </center>
-            
+            <div class="banner"></div>
             <center>
                 <iframe class="newsframe" src="news.html" allowTransparency="true" style="border: none;overflow: hidden;height: 500px;width: 80%;"></iframe>
             </center>
-            
+            <div class="banner"></div>
         </div>
         <h2 class="smaller-heading">Some general guidelines</h2>
         <ol class="guidelines">
@@ -170,7 +170,7 @@
     </div>
     <div class="events container">
         <h2 class="smaller-heading">Events</h2>
-        
+        <div class="banner"></div>
         <div class="d-none d-md-block">
             <div class="row">
                 <div class="col-md-4 hover-bg">
@@ -195,7 +195,7 @@
                     </a>
                 </div>
             </div>
-            
+            <div class="banner"></div>
             <div class="row">
                 <div class="col-md-4 hover-bg">
                     <a href="scratch.html" target="_blank">
@@ -219,7 +219,7 @@
                     </a>
                 </div>
             </div>
-            
+            <div class="banner"></div>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 hover-bg">
@@ -231,10 +231,10 @@
                 </div>
             </div>
         </div>
-        
+        <div class="banner"></div>
         <center><img class="img-fluid" src="lib/schedule.png" alt="schedule"></center>
-        
-        
+        <div class="banner"></div>
+        <div class="banner"></div>
     </div>
 </div>
 
@@ -242,9 +242,9 @@
     
 <div id="team">
     <center>
-        
+        <div class="banner"></div>
             <h1 class="text-center">PYROTECH CLUB</h1>
-            
+            <div class="banner"></div>
             <div class="contact container">
 
                 <div class="row">
@@ -268,7 +268,7 @@
                     </div>
                 </div>
 
-                
+                <div class="banner"></div>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -300,7 +300,7 @@
                     </div>
                 </div>
 
-                
+                <div class="banner"></div>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -332,7 +332,7 @@
                     </div>
                 </div>
 
-                
+                <div class="banner"></div>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -364,7 +364,7 @@
                     </div>
                 </div>
 
-                
+                <div class="banner"></div>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -419,84 +419,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-    // LOADER 
-    
-var myVar;
-function myFunction() {
-    myVar = setTimeout(showPage, 1500);
-}
-
-function showPage() {
-    document.getElementById("load").style.display = "none";
-    document.getElementById("mainBod").style.display = "block";
-} 
-
-    
-    // TRANSPARENT NAVBAR
-    
-jQuery(document).on("scroll", function () {
-    if ($(document).scrollTop() > 120) {
-        $(".navbar").css("background-color","var(--nav-bg-color)");
-        $(".disappear").css("top","0");
-    } else {
-        $(".navbar").css("background","none");
-        $(".disappear").css("top","-200");
-    }
-});   
-
-    // SMOOTH SCROLL
-    
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-            });
-        } 
-    });
-});    
-
-    // COUNTDOWN
-
-var myfunc = setInterval(function() {
-    var countDownDate = new Date("Jul 22, 2020 00:00:00").getTime();
-    var now = new Date().getTime();
-    var timeleft = countDownDate - now;
-    var distance = countDownDate - now;
-    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    document.getElementById("days").innerHTML = days
-    document.getElementById("hours").innerHTML = hours 
-    document.getElementById("mins").innerHTML = minutes 
-    document.getElementById("secs").innerHTML = seconds
-    if (timeleft < 0) {
-        clearInterval(myfunc);
-        document.getElementById("days").innerHTML = ""
-        document.getElementById("hours").innerHTML = "" 
-        document.getElementById("mins").innerHTML = ""
-        document.getElementById("secs").innerHTML = ""
-        document.getElementById("end").innerHTML = "Let's roll ;)";
-    }
-}, 1000);
-    
-    // SIDE-NAV
-    
-function openNav() {
-    document.getElementById("sidenav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-}
-        
-</script>    
+<script src="index.js"></script>    
 </body>
 </html>
