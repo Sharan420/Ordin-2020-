@@ -2,12 +2,12 @@
     
 var myVar;
 function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(showPage, 1500);
 }
 
 function showPage() {
     document.getElementById("load").style.display = "none";
-    document.getElementById("mainbod").style.display = "block";
+    document.getElementById("mainBod").style.display = "block";
 } 
 
     
@@ -51,10 +51,10 @@ var myfunc = setInterval(function() {
     var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    document.getElementById("days").innerHTML = days + "d "
-    document.getElementById("hours").innerHTML = hours + "h " 
-    document.getElementById("mins").innerHTML = minutes + "m " 
-    document.getElementById("secs").innerHTML = seconds + "s"
+    document.getElementById("days").innerHTML = days
+    document.getElementById("hours").innerHTML = hours 
+    document.getElementById("mins").innerHTML = minutes 
+    document.getElementById("secs").innerHTML = seconds
     if (timeleft < 0) {
         clearInterval(myfunc);
         document.getElementById("days").innerHTML = ""
@@ -63,13 +63,6 @@ var myfunc = setInterval(function() {
         document.getElementById("secs").innerHTML = ""
         document.getElementById("end").innerHTML = "Let's roll ;)";
     }
-}, 1000);
-
-setInterval(function(){
-    $("#demo").css('background-color', 'var(--primary-color)');
-    setTimeout(function(){
-        $("#demo").css('background-color', 'var(--secondary-color)');
-    }, 500)
 }, 1000);
     
     // SIDE-NAV

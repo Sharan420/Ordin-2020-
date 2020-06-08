@@ -5,22 +5,14 @@
     
 <head>
 
-<title>Ordin@trix 20</title>  
-
+<title>Ordin@trix 20</title>
+    
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
-<link href='index.css' rel='stylesheet' type='text/css'>
-<link href='animations.css' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">    
+<link href='main.css' rel='stylesheet' type='text/css'>
 <link rel="icon" href="lib/favicon.png" sizes="26x26" type="image/png">
-<link rel="stylesheet" href="ordin.css"> 
-
 
 </head>
 <body onload="myFunction()">
@@ -29,16 +21,18 @@
     
 <div class="load" id="load">
     <center>
-        <div class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="weltext">Welcome</div>
+        <div class="loader">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
         </div>
     </center>
-</div>
-<div class="mainbod" id="mainbod">    
+</div>  
+
+    
+<div class="mainBod" id="mainBod">
     
     <!---  NAVBAR   --->
         
@@ -48,9 +42,7 @@
         <a href="#about">About</a>
         <a href="#events">Events</a>
         <a href="#team">Team</a>
-        <a href="register2.html" class="log">Register for Events</a>
-        <a href="register.html" class="log">Register</a>
-        <a href="login.html" class="log">Login</a>
+        <a href="register.html">Register</a>
     </div>
     <div class="nav-small">
         <span onclick="openNav()" class="bruh">
@@ -79,52 +71,67 @@
     <!--- HOME --->
 
 <div id="home">
-    <div id="particles-js"></div>
-    <div class="home-over">
-        <center>
-            <img src="lib/ordin.png">
-        </center>
-    </div>
+    <h1>ORDIN</h1>
 </div>    
     
 <div id="about">
     <center>
-        <div class="container">
-            <div class="cntdwn">
-                <h2>Coming Soon</h2>
-                <div id="demo">
-                    <span id="days"></span>
-                    <span id="hours"></span>
-                    <span id="mins"></span>
-                    <span id="secs"></span>
-                    <h2 id="end"></h2>
+        <h2>Coming Soon</h2>
+        <div class="cntdwn">
+            <div id="demo">
+                <div class="row">
+                    <div class="col-md-3">
+                        <center>
+                            <span id="days"></span><br>
+                            <span>DAYS</span>
+                        </center>
+                    </div>
+                    <div class="col-md-3">
+                        <center>
+                            <span id="hours"></span><br>
+                            <span>HOURS</span>
+                        </center>
+                    </div>
+                    <div class="col-md-3">
+                        <center>
+                            <span id="mins"></span><br>
+                            <span>MINUTES</span>
+                        </center>
+                    </div>
+                    <div class="col-md-3">
+                        <center>
+                            <span id="secs"></span><br>
+                            <span>SECONDS</span>
+                        </center>
+                    </div>
                 </div>
-                <p>22<sup>nd</sup> July 2020</p>
+                <h2 id="end"></h2>
             </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="sponsors">
-                        <h2 class="text-center">Our Sponsors</h2><hr><br>
-                        <img class="col-md-3 img-fluid" src="lib/cadx.png" alt="cad-x">
-                    </div>
+        </div>
+        <p>22<sup>nd</sup> July 2020</p>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="sponsors">
+                    <h2 class="text-center">Our Sponsors</h2><hr><br>
+                    <img class="col-md-3 img-fluid" src="lib/cadx.png" alt="cad-x">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 text-center">
-                    <div class="abt ordin-abt">
-                        <h1>Ordin@trix 20.0</h1>
-                        <p> It all started 16 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.
-                        <br><br>
-                        The event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
-                    </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 text-center">
+                <div class="abt ordin-abt">
+                    <h1>Ordin@trix 20.0</h1>
+                    <p> It all started 16 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.
+                    <br><br>
+                    The event has witnessed gracious presence of celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and CHINH India Festival.</p>
                 </div>
-                <div class="col-lg-6 col-md-12 text-center">
-                    <div class="abt pyro-abt">
-                    <h1>Pyrotech Club</h1>
-                        <p>Since it's conception, Ordin@trix has come a long way and so have the PYROTECHS. They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.<br><br>
-                        PYROTECH members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.
-                        </p>
-                    </div>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center">
+                <div class="abt pyro-abt">
+                <h1>Pyrotech Club</h1>
+                    <p>Since it's conception, Ordin@trix has come a long way and so have the PYROTECHS. They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.<br><br>
+                    PYROTECH members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, Robotics, photography and others.
+                    </p>
                 </div>
             </div>
         </div>
@@ -134,110 +141,100 @@
     <!---  EVENTS   --->
         
 <div id="events">
-    <div class="banner"></div>
+    
     <div class="container">
         <h1 class="text-center section-heading">The Events</h1>
         <p class="heading-para">Because you have to know what all is in the store.</p>
         <div class="container-fluid">
-            <div class="banner"></div>
+            
             <center>
             <h2 class="text-center small-heading">News and Updates</h2><hr>
             </center>
-            <div class="banner"></div>
-            <div class="row">
-                <div class="col-md-6">
-                    <center>
-                        <iframe class="newsframe" src="news.html" allowTransparency="true" style="border: none;overflow: hidden;height: 500px;width: 80%;"></iframe>
-                    </center>
-                </div>
-                <div class="col-md-6">
-                    <center>
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fordinatrix19.0&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="80%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                    </center>
-                </div>
-            </div>
-            <div class="banner"></div>
+            
+            <center>
+                <iframe class="newsframe" src="news.html" allowTransparency="true" style="border: none;overflow: hidden;height: 500px;width: 80%;"></iframe>
+            </center>
+            
         </div>
         <h2 class="smaller-heading">Some general guidelines</h2>
         <ol class="guidelines">
-            <li>Only <b>online</b> registrations on first come first served basis.The first <b>35 registrations</b> will be accommodated. The last date for registration is <b>LOREM IPSUM</b>. On the spot registrations for any event will <b>NOT</b> be accepted. Certain events are subject to restraint regarding number of registrations. Schools are requested to check the same in the event rules.</li>
+            <li>Only <b>online</b> registrations on first come first served basis.The first <b>35 registrations</b> will be accommodated. The last date for registration is <b>18th July 2020</b>. On the spot registrations for any event will <b>NOT</b> be accepted. Certain events are subject to restraint regarding number of registrations. Schools are requested to check the same in the event rules.</li>
             <li>List of registered schools will be displayed on our website and social portals</li>
             <li>Registered schools will  report to the registration desk on LOREM IPSUM before 9 AM. In case a school is running late, it must inform the organizers about the same.</li>
             <li>All the events will be held simultaneously starting from 9 AM and one  student can  register only for one event.</li>
             <li>Each school team must be accompanied by a teacher.</li>
-            <li>Please refer to our school website, <a class="light" href="http://www.tagoreint.com/vv" target="_blank">www.tagoreint.com/vv</a> and our Facebook page, <a class="light" href="https://www.facebook.com/ordinatrix19.0/" target="_blank">Ordinatrix 20.0</a>, for the latest updates on the events.</li>
+            <li>Please refer to our school website, <a class="light" href="http://www.tagoreint.com/vv" target="_blank">www.tagoreint.com/vv</a> and our event website for the latest updates on the events.</li>
             <li>Decisions of the organizers & jury members regarding any issue related to Ordin@trix’20.0 will be FINAL AND BINDING on all schools and participants.</li>
             <li>To qualify for the overall trophy, a school must take part in a minimum of 5 events.</li>
         </ol>
     </div>
     <div class="events container">
         <h2 class="smaller-heading">Events</h2>
-        <div class="banner"></div>
+        
         <div class="d-none d-md-block">
             <div class="row">
-                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                <div class="col-md-4 hover-bg">
                     <a href="innovate.html" target="_blank">
-                        <i class="far fa-handshake eicon"></i>
+                        <i class="far fa-handshake event-icon"></i>
                         <h2>Innovate@trix</h2>
                         <p>Get your minds running like 'em RAMs</p>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                <div class="col-md-4 hover-bg">
                     <a href="quiz.html" target="_blank">
-                        <i class="fas fa-brain eicon"></i>
+                        <i class="fas fa-brain event-icon"></i>
                         <h2>Quiz@trix</h2>
                         <p>The ultimate quiz event where you quiz the obvious</p>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                <div class="col-md-4 hover-bg">
                     <a href="code.html" target="_blank">
-                        <i class="fas fa-code eicon"></i>
+                        <i class="fas fa-code event-icon"></i>
                         <h2>Code@trix</h2>
                         <p>lorem ipsum dolor sit amet consectetur</p>
                     </a>
                 </div>
             </div>
-            <div class="banner"></div>
+            
             <div class="row">
-                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                <div class="col-md-4 hover-bg">
                     <a href="scratch.html" target="_blank">
-                        <i class="fas fa-paint-brush eicon"></i>
+                        <i class="fas fa-paint-brush event-icon"></i>
                         <h2>Anim@trix</h2>
                         <p>Pixar's Up</p>
                     </a>
                 </div> 
-                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                <div class="col-md-4 hover-bg">
                     <a href="game.html" target="_blank">
-                        <i class="fas fa-gamepad eicon"></i>
+                        <i class="fas fa-gamepad event-icon"></i>
                         <h2>Game@trix</h2>
                         <p>Game On</p>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                <div class="col-md-4 hover-bg">
                     <a href="snap.html" target="_blank">
-                        <i class="fas fa-camera-retro eicon"></i>
+                        <i class="fas fa-camera-retro event-icon"></i>
                         <h2>Snap@trix</h2>
                         <p>You be clicking while the clock's ticking</p>
                     </a>
                 </div>
             </div>
-            <div class="banner"></div>
+            
             <div class="row">
-                <div class="col-lg-3 col-sm-12"></div>
-                <div class="col-lg-1 col-sm-12"></div>
-                <div class="col-lg-4 col-sm-12 text-center hover-bg">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 hover-bg">
                     <a href="crypt.html" target="_blank">
-                        <i class="fas fa-question eicon"></i>
+                        <i class="fas fa-question event-icon"></i>
                         <h2>Crypt@trix</h2>
                         <p>Cn'm hin aicha ni vy nbcm yums</p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="banner"></div>
+        
         <center><img class="img-fluid" src="lib/schedule.png" alt="schedule"></center>
-        <div class="banner"></div>
-        <div class="banner"></div>
+        
+        
     </div>
 </div>
 
@@ -245,14 +242,13 @@
     
 <div id="team">
     <center>
-        <div class="banner"></div>
-        <div class="container">
-            <h1 class="text-center">The A - Team</h1>
-            <div class="banner"></div>
+        
+            <h1 class="text-center">PYROTECH CLUB</h1>
+            
             <div class="contact container">
 
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 text-center">
+                    <div class="col-md-6">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -261,7 +257,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> shaivipyrotech@gmail.com
                     </div>
-                    <div class="col-lg-6 col-md-12 text-center">
+                    <div class="col-md-6">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -272,10 +268,10 @@
                     </div>
                 </div>
 
-                <div class="banner"></div>
+                
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -284,7 +280,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> kabuaditya1@gmail.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -293,7 +289,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> anandiya.sheel.diwan17@gmail.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -304,10 +300,10 @@
                     </div>
                 </div>
 
-                <div class="banner"></div>
+                
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -316,7 +312,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> anshbajaj07@gmail.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div> 
@@ -325,7 +321,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> sharansuri1980@gmail.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -336,10 +332,10 @@
                     </div>
                 </div>
 
-                <div class="banner"></div>
+                
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -348,7 +344,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> reachsaanya@gmail.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div> 
@@ -357,7 +353,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> amogh.pyrotech@gmail.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -368,10 +364,10 @@
                     </div>
                 </div>
 
-                <div class="banner"></div>
+                
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -380,7 +376,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> manyakamath26@gmail.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div> 
@@ -389,7 +385,7 @@
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
                         <i class="fas fa-envelope"></i> loremipsum@dolor.com
                     </div>
-                    <div class="col-lg-4 col-md-12 text-center">
+                    <div class="col-md-4">
                         <div class="imgcontainer">
                             <img class="headsimg" src="lib/yeet.png">
                         </div>
@@ -400,7 +396,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </center>
 </div>
     
@@ -422,10 +417,86 @@
     
 </div>
 
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="index.js"></script>    
-<script src="ordin.js"></script>
+<script>
+    // LOADER 
+    
+var myVar;
+function myFunction() {
+    myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+    document.getElementById("load").style.display = "none";
+    document.getElementById("mainBod").style.display = "block";
+} 
+
+    
+    // TRANSPARENT NAVBAR
+    
+jQuery(document).on("scroll", function () {
+    if ($(document).scrollTop() > 120) {
+        $(".navbar").css("background-color","var(--nav-bg-color)");
+        $(".disappear").css("top","0");
+    } else {
+        $(".navbar").css("background","none");
+        $(".disappear").css("top","-200");
+    }
+});   
+
+    // SMOOTH SCROLL
+    
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        } 
+    });
+});    
+
+    // COUNTDOWN
+
+var myfunc = setInterval(function() {
+    var countDownDate = new Date("Jul 22, 2020 00:00:00").getTime();
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+    var distance = countDownDate - now;
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    document.getElementById("days").innerHTML = days
+    document.getElementById("hours").innerHTML = hours 
+    document.getElementById("mins").innerHTML = minutes 
+    document.getElementById("secs").innerHTML = seconds
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = "" 
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "Let's roll ;)";
+    }
+}, 1000);
+    
+    // SIDE-NAV
+    
+function openNav() {
+    document.getElementById("sidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
+        
+</script>    
 </body>
 </html>
